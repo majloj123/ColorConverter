@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ColorConverter.css">
+</head>
+<body id="background">
+    <h1>Color Converter</h1>
+    <div id="container">
+        <div id="layout">
+                <div class="colors">
+                    <p>Red</p>
+                    <input type="range" min="0" max="255" value="255" id="r">
+                    <p id="r-label">255</p>
+                </div>
+                <div class="colors">
+                    <p>Green</p>
+                    <input type="range" min="0" max="255" value="255" id="g">
+                    <p id="g-label">255</p>
+                </div>
+                <div class="colors">
+                    <p>Blue</p>
+                    <input type="range" min="0" max="255" value="255" id="b">
+                    <p id="b-label">255</p>
+                </div>
+            </div>
+        
+        <h1 >Hex value:</h1>
+        <p>
+            <input type="text" id="hex-label"> <br>
+            <button id="button" onclick="changeToRGB()">Convert to RGB</button> <br>
+            <button onclick="copy()">Copy the value!</button>
+        </p>
+    </div>
+    <div class="footer">
+        <p>@ Copyright Marian Jandacka</p>
+    </div>
+    <script type="text/javascript" src="jssColorConverter.js"></script>
+</body>
+</html>
